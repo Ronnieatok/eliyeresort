@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliye Springs Resort | Menu</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Google Fonts with proper preloading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    
+    <link rel="icon" href="img/logo.jpeg" type="image/x-icon">
+    <!-- Minified CSS -->
+    <style>
+        :root {
+    --deep-blue: #2A5A5B;       /* Deep teal like twilight waters */
+    --teal: #4D8B93;            /* Muted lake turquoise */
+    --seafoam: #E3B448;         /* Golden sand at sunset */
+    --sand: #EFE6DD;            /* Warm ivory sand */
+    --coral: #E57A44;           /* Terracotta sunset */
+    --light: #F7F3EE;           /* Soft parchment */
+    --dark: #1A2E35;            /* Deep blue-gray */
+            --transition:all .4s cubic-bezier(.175,.885,.32,1.275)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Cardo',serif;background-color:var(--light);color:var(--dark);line-height:1.6}h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700}header{width:100%;background:rgba(1,31,38,.95);padding:1rem 5%;display:flex;justify-content:space-between;align-items:center}.logo{font-size:1.8rem;font-weight:900;color:var(--seafoam);text-decoration:none;display:flex;align-items:center}.logo:hover{color:var(--coral);transform:scale(1.05)}.logo i{margin-right:8px;color:var(--coral);font-size:1.5rem;transition:var(--transition)}.logo:hover i{transform:rotate(20deg)}.section-title{text-align:center;margin:3rem 0 2rem}.section-title h2{font-size:2.5rem;color:var(--deep-blue);display:inline-block;position:relative;transition:var(--transition)}.section-title h2::after{content:'';position:absolute;bottom:-15px;left:50%;transform:translateX(-50%);width:60px;height:4px;background:var(--coral);transition:var(--transition)}.menu-container{max-width:1200px;margin:0 auto}.menu-categories{display:flex;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}.category-btn{background:transparent;border:2px solid var(--teal);color:var(--teal);padding:.7rem 1.5rem;margin:.3rem;border-radius:50px;cursor:pointer;font-weight:600;transition:var(--transition);font-size:.9rem}.category-btn.active,.category-btn:hover{background:var(--teal);color:var(--light);transform:scale(1.05)}.menu-items{display:grid;grid-template-columns:1fr;gap:1.5rem}.menu-item{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.1);transition:var(--transition);display:flex;flex-direction:column}.menu-item:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 20px 40px rgba(0,0,0,.2)}.menu-item-image{width:100%;height:200px;overflow:hidden}.menu-item-image img{width:100%;height:100%;object-fit:cover;transition:var(--transition)}.menu-item:hover .menu-item-image img{transform:scale(1.1)}.menu-item-content{padding:1.5rem;transition:var(--transition)}.menu-item-content:hover{background:var(--sand)}.menu-item h3{font-size:1.4rem;color:var(--deep-blue);margin-bottom:.5rem;transition:var(--transition)}.menu-item h3:hover{color:var(--coral)}.menu-item-price{color:var(--coral);font-weight:700;font-size:1.2rem;margin-bottom:.5rem}.menu-item p{color:#666;font-size:.95rem}footer{background:#011F26;color:#F2F2F2;text-align:center;padding:1.5rem 0;margin-top:3rem;font-size:1rem}@media (min-width:768px){.section-title h2{font-size:3rem}.menu-items{grid-template-columns:repeat(auto-fit,minmax(350px,1fr))}.menu-item{flex-direction:row}.menu-item-image{width:40%;height:auto}.menu-item-content{width:60%}}@media (max-width:767px){.section-title h2{font-size:2rem}}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><i class="fas fa-water">Eliye Springs</i> </a>
+    </header>
+    
+    <section id="menu" class="menu">
+        <div class="section-title">
+            <h2>Kenyan Cuisine</h2>
+        </div>
+        
+        <div class="menu-container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="breakfast">Breakfast</button>
+                <button class="category-btn" data-category="lunch">Lunch</button>
+                <button class="category-btn" data-category="dinner">Dinner</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+           <div class="menu-items">
+    <!-- Breakfast Items -->
+    <div class="menu-item" data-category="breakfast">
+        <div class="menu-item-image">
+            <img src="img/tilapia.jpg" alt="Lakeside Breakfast" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lakeside Breakfast Platter</h3>
+            <div class="menu-item-price">Ksh 1800</div>
+            <p>Fried tilapia fillet, scrambled eggs, roasted tomatoes, sautéed greens, and ugali</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="breakfast">
+        <div class="menu-item-image">
+            <img src="img/mahamri.jpg" alt="Mandazi with Tea" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Swahili Breakfast</h3>
+            <div class="menu-item-price">Ksh 1200</div>
+            <p>Fresh mandazi, mahamri, samosas with spiced chai and fresh fruit</p>
+        </div>
+    </div>
+    
+    <!-- Lunch Items -->
+    <div class="menu-item" data-category="lunch">
+        <div class="menu-item-image">
+            <img src="img/tilapia2.jpg" alt="Fried Tilapia" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Crispy Lake Tilapia</h3>
+            <div class="menu-item-price">Ksh 2500</div>
+            <p>Whole fried tilapia with kachumbari, ugali, and sukuma wiki</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="lunch">
+        <div class="menu-item-image">
+            <img src="img/nileperch.jpg" alt="Fish Curry" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lake Fish Coconut Curry</h3>
+            <div class="menu-item-price">Ksh 2200</div>
+            <p>Nile perch in rich coconut curry sauce served with rice and chips</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="lunch">
+        <div class="menu-item-image">
+            <img src="img/grilled.jpg" alt="Fish Kebabs" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lake Fish Kebabs</h3>
+            <div class="menu-item-price">Ksh 1900</div>
+            <p>Grilled tilapia skewers with tamarind glaze and coconut rice</p>
+        </div>
+    </div>
+    
+    <!-- Dinner Items -->
+    <div class="menu-item" data-category="dinner">
+        <div class="menu-item-image">
+            <img src="img/Grilled Lemon Garlic Salmon with Veggies.jpg" alt="Whole Grilled Fish" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Grilled Nile Perch</h3>
+            <div class="menu-item-price">Ksh 3200</div>
+            <p>Whole grilled perch with lemon butter sauce, roasted vegetables and plantains</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="dinner">
+        <div class="menu-item-image">
+            <img src="img/fishstew.jpg" alt="Fish Stew" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Turkana Traditional Fish Stew</h3>
+            <div class="menu-item-price">Ksh 2800</div>
+            <p>Slow-cooked tilapia in traditional spices with ugali and boiled greens</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="dinner">
+        <div class="menu-item-image">
+            <img src="img/tilapiagrilld.jpg" alt="Tilapia" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lake Turkana Tilapia</h3>
+            <div class="menu-item-price">Ksh 3500</div>
+            <p>Grilled Tilapia with garlic butter and chili sauce</p>
+        </div>
+    </div>
+    
+    <!-- Drinks -->
+    <div class="menu-item" data-category="drinks">
+        <div class="menu-item-image">
+            <img src="img/kenyandawa.jpg" alt="Dawa Cocktail" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lakeside Cocktail</h3>
+            <div class="menu-item-price">Ksh 1500</div>
+            <p>Kenyan vodka, honey, lime and muddled ginger served lakeside style</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="drinks">
+        <div class="menu-item-image">
+            <img src="img/mangolassi.jpg" alt="Mango Lassi" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Tropical Lassi</h3>
+            <div class="menu-item-price">Ksh 800</div>
+            <p>Fresh mango, yogurt and cardamom smoothie</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="drinks">
+        <div class="menu-item-image">
+            <img src="img/homemade.jpg" alt="Ginger Beer" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Homemade Ginger Beer</h3>
+            <div class="menu-item-price">Ksh 600</div>
+            <p>Brewed fresh daily with local ginger and lemon</p>
+        </div>
+    </div>
+    
+    <!-- Additional Items -->
+    <div class="menu-item" data-category="lunch">
+        <div class="menu-item-image">
+            <img src="img/fishburger.jpg" alt="Fish Burger" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lake Fish Burger</h3>
+            <div class="menu-item-price">Ksh 1800</div>
+            <p>Breaded tilapia fillet with coleslaw and mango mayo in a brioche bun</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="dinner">
+        <div class="menu-item-image">
+            <img src="img/eggplant.jpg" alt="Vegetable Platter" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lakeside Vegetable Platter</h3>
+            <div class="menu-item-price">Ksh 2100</div>
+            <p>Grilled eggplant, spiced lentils, coconut greens and plantain fritters</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="breakfast">
+        <div class="menu-item-image">
+            <img src="img/porridge.jpg" alt="Porridge Bowl" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Traditional Porridge Bowl</h3>
+            <div class="menu-item-price">Ksh 900</div>
+            <p>Millet and sorghum porridge with honey, nuts and seasonal fruits</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" data-category="lunch">
+        <div class="menu-item-image">
+            <img src="img/samosas.jpg" alt="Fish Samosas" loading="lazy">
+        </div>
+        <div class="menu-item-content">
+            <h3>Lake Fish Samosas</h3>
+            <div class="menu-item-price">Ksh 1400</div>
+            <p>Crispy samosas filled with spiced tilapia and vegetables</p>
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <footer>
+        &copy;2025 Eliye Springs Resort.
+    </footer>
+
+    <!-- Inline JavaScript for menu filtering -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            // Initially show all menu items
+            menuItems.forEach(item => item.style.display = '');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Show/hide menu items based on category
+                    menuItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
